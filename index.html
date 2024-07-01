@@ -3,14 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>숫자 맞추기 게임</title>
+    <title>Number Guess</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>숫자 맞추기 게임!</h1>
-    <div id="result-area">결과가 나온다</div>
-    <input id="user-input" type="number" />
-    <button id="play-button">Go!</button>
+    <nav>
+      <div class="nav-btn-area">
+        <button id="answerButton" class="nav-button-style">정답보기</button>
+        <div id="answerArea" class="answer"></div>
+      </div>
+    </nav>
+    <main>
+      <div class="main-container">
+        <h1>숫자 맞추기</h1>
+        <img id="mainImage" src="images/dance_pepe.gif" alt="main-image" width="400px">
+        <div id="result">한번 맞춰보시지! 기회: 3</div>
+        <div class="main-area">
+          <input id="inputNum" class="input-box main-item" type="number" placeholder="숫자를 입력하세요." />
+          <button id="goButton" class="button-style main-item">GO!</button>
+          <button id="resetButton" class="button-style reset-button-style main-item">RESET</button>
+        </div>
+      </div>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
